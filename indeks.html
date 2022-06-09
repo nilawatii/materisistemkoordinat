@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Dasboad Utama</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="sidebar">
+      <div class="sidebar-header"></span><center></span>HOME</center></div>
+      <div class="sidebar-body">
+          <ul class="menu-conten">
+              <li class="main-menu">
+                  <a href="pages/dashboard.html">Dashboad</a>
+              </li>
+              <li class="parent-menu" onclick="toggleSubMenu('submenu-Pendahuluan')">
+                <div>
+                    <a href="#">Pendahuluan
+                        <span class="fas fa-caret-down"></span>   
+                    </a>      
+                </div> 
+                <ul class="submenu-conten hidden" id="submenu-Pendahuluan"> 
+                    <li list class="sub-menu"><a href="pages/latarbelakang.html">Latar Belakang</a></li>
+                    <li list class="sub-menu"><a href="pages/gambaranumun.html">Gambaran Umum</a></li>
+                </ul>  
+                
+            </li>
+            <li class="parent-menu"  onclick="toggleSubMenu('submenu-Sistem')">
+               <div>
+                <a href="#">Sistem Koordinat
+                    <span class="fas fa-caret-down"></span>
+                </a>
+                </div> 
+                <ul class="submenu-conten hidden" id="submenu-Sistem"> 
+                    <li list class="sub-menu"><a href="pages/gambarletakbenda.html">Menggambar Letak Benda</a></li>
+                    <li list class="sub-menu"><a href="pages/koordinat.html">Koordinat</a></li>
+                    <li list class="sub-menu"><a href="pages/sisitemkoordinat.html">Sistem Koordinat Kartesius</a></li>
+                </ul>                                
+            </li>
+            <li class="main-menu">
+                <a href="pages/rangkuman.html">Rangkuman</a>
+            </li>
+            <li class="main-menu">
+                <a href="pages/evaluasi.html">Evaluasi</a>
+            </li>
+            <li class="main-menu">
+                <a href="pages/biografi.html">Biografi Penulis</a>
+            </li>
+          </ul>
+      </div>
+  </div>
+  <script>
+      function toggleSubMenu(submenuId) {
+          let submenu = document.getElementById(submenuId)
+          console.log(submenu)
+          if(submenu.classList.contains('hidden')){
+            submenu.classList.remove('hidden')
+            submenu.classList.add('shown')
+          }
+          else{
+            submenu.classList.remove('shown')
+            submenu.classList.add('hidden')
+          }
+      }
+  </script>
+</body>
+</html>

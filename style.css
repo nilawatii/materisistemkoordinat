@@ -1,0 +1,75 @@
+ /*Google Fonts Import Link*/
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+ *{
+     margin: 0;
+     padding: 0;
+     user-select: none;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+ }
+ body{
+    height: 100vh;
+    width: 80%;
+    background-color: rgb(90, 224, 224);
+}
+ .sidebar {
+     width: 250px;
+     min-height: 100vh;
+     background: rgb(255, 247, 214);
+ }
+ .sidebar-header{
+     color: aliceblue;
+     font-size: 30px;
+     padding-left: 10px;
+     padding-top: 10px;
+     background: rgb(230, 120, 138);
+ }
+ .sidebar-body {
+     color: whitesmoke;
+     font-size: 15px;
+ }
+ .menu-conten, .submenu-conten {
+     padding: 0px;
+ }
+ .main-menu > a, .parent-menu a {
+color: rgb(45, 40, 40);
+text-decoration: none;
+width: 100%;
+display: block;
+padding: 10px 15px;
+ }
+ .main-menu:hover {
+     background: whitesmoke;
+    border-left: solid 10px rgb(230, 120, 138);
+ }
+ .main-menu:hover a {
+     color: palevioletred;
+ }
+.parent-menu div {
+display: flex;
+align-items: center;
+padding-right: 10px;
+}
+.parent-menu div:hover {
+    background: whitesmoke;
+   border-left: solid 10px rgb(230, 120, 138);
+}
+.parent-menu div:hover a {
+    color: palevioletred;
+}
+.submenu-conten a {
+    background: rgb(254, 216, 184);
+}
+.submenu-conten a:hover{
+    background: whitesmoke;
+   border-left: solid 10px rgb(255, 247, 214);  
+}
+.submenu-conten a:hover a{
+    color: palevioletred;   
+}
+.hidden {
+    display: none;
+}
+.shown {
+    display: block;
+}
